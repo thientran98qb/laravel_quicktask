@@ -5,7 +5,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+<<<<<<< HEAD
                 <div class="card-header">@lang('action.dashboard')</div>
+=======
+                <div class="card-header">{{ __('Dashboard') }}</div>
+>>>>>>> routing
 
                 <div class="card-body">
                     @if (session('status'))

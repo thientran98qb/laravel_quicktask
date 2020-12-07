@@ -41,6 +41,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
+<<<<<<< HEAD
                                 <a class="nav-link" href="{{ route('login') }}">@lang('action.login')</a>
                             </li>
                             @if (Route::has('register'))
@@ -58,6 +59,15 @@
                                     <a class="dropdown-item" href="{{route('change-language',['vi'])}}">@lang('action.language.lang_vi')</a>
                                 </div>
                             </li>
+=======
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+>>>>>>> routing
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -65,8 +75,15 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+<<<<<<< HEAD
                                     <a class="dropdown-item" id="logout" href="{{ route('logout') }}">
                                         @lang('action.logout')
+=======
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+>>>>>>> routing
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -84,6 +101,9 @@
             @yield('content')
         </main>
     </div>
+<<<<<<< HEAD
     <script src="/process.js"></script>
+=======
+>>>>>>> routing
 </body>
 </html>
