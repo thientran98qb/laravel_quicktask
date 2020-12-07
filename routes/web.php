@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\TaskController;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,5 +20,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => 'locale'], function() {
+    
+    Route::get('change-language/{language}', 'HomeController@changeLanguage')->name('change-language');
+    
+    Auth::routes();
+    
+    Route::resource('tasks', TaskController::class);  
+});
