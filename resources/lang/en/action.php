@@ -16,5 +16,8 @@ return [
     'forgot_pass'=>'Forgot Your Password?',
     'remember_me'=>'Remember me',
     'success_login'=>'You are logged in!',
-    'dashboard'=>'Dashboard'
+    'dashboard'=>'Dashboard',
+    'task'=>'Task',
+    'addtask'=>'Add Task',
+    'alert_fail'=>'Whoops! Something went wrong!'
 ];

@@ -16,5 +16,8 @@ return [
     'forgot_pass'=>'Quên mật khẩu',
     'remember_me'=>'Ghi nhớ mật khẩu',
     'success_login'=>'Bạn đã đăng nhập',
-    'dashboard'=>'Bảng điều khiển'
+    'dashboard'=>'Bảng điều khiển',
+    'task'=>'Nhiệm vụ',
+    'addtask'=>'Thêm nhiệm vụ',
+    'alert_fail'=>'Rất tiếc! Đã xảy ra lỗi!'
 ];
